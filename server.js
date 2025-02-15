@@ -8,7 +8,7 @@ const cors = require('cors');
 app.use(cors());
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/buigit statusld')));
+app.use(express.static(path.join(__dirname, 'frontend/buigit statusld')));
 
 // API route example
 app.get('/api/hello', (req, res) => {
@@ -17,7 +17,7 @@ app.get('/api/hello', (req, res) => {
 
 // Catch-all route to serve the React app
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
 });
 
 // Start the server
