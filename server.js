@@ -4,6 +4,9 @@ const path = require('path');
 const app = express();
 const port = 5001;
 
+const cors = require('cors');
+app.use(cors());
+
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/buigit statusld')));
 
