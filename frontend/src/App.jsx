@@ -2,6 +2,7 @@ import logo from './assets/logo.svg';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Header from "./components/layout/Header";
 
 const apiUrl = process.env.REACT_APP_API_URL
 
@@ -22,6 +23,9 @@ const App = () => {
 
   return (
     <div className="App">
+       <div>
+          <Header/>
+        </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" test_id="logo"/>
         <p>
