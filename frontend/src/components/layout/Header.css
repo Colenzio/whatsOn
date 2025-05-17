@@ -30,7 +30,7 @@
 /* Individual link styling */
 .link {
   text-decoration: none; /* Remove underline */
-  color: #61dafb; /* Light blue color */
+  color: rgb(79, 112, 221); /* Light blue color */
   font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.3s ease; /* Smooth hover effect */

@@ -1,4 +1,3 @@
-import logo from './assets/logo.svg';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import './App.css';
@@ -27,9 +26,8 @@ const App = () => {
           <Header/>
         </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" test_id="logo"/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p>Message from backend is: {message}</p>
         </p>
         <a
           className="App-link"
@@ -37,10 +35,9 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
         </a>
       </header>
-      <p>Message from backend is: {message}</p>
+   
     </div>
   );
 }
