@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from "./components/layout/Header";
 
+
 const apiUrl = process.env.REACT_APP_API_URL
 
 const App = () => {
@@ -11,9 +12,9 @@ const App = () => {
 
   useEffect(() => {
     // Fetch data from the Express backend
-    axios.get(`${apiUrl}/api/hello`)
+    axios.get(`${apiUrl}/api/eventbrite`)
       .then(response => {
-        setMessage(response.data.message);
+        setMessage(response.data.name);
       })
       .catch(error => {
         console.error('Error fetching data:', error);
@@ -27,7 +28,7 @@ const App = () => {
         </div>
       <header className="App-header">
         <p>
-        <p>Message from backend is: {message}</p>
+        <p>Welcome: {message}</p>
         </p>
         <a
           className="App-link"

@@ -6,24 +6,16 @@ const Header = () => {
     return (
         <div className="text-4xl">
             <header className="header">
-                <h1>whatsOn</h1>
-                <img src={logo} className="App-logo" alt="logo" test_id="logo"/>
+                <div className="logo-title">
+                    <img src={logo} className="App-logo" alt="logo" test_id="logo" />
+                    <h1>whatsOn</h1>
+                </div>
                 <nav className="nav-links">
-                    <a href="/home" className="link">
-                        Home
-                    </a>
-                    <a href="/about" className="link">
-                        About
-                    </a>
-                    <a href="/services" className="link">
-                        Services
-                    </a>
-                    <a href="/contact" className="link">
-                        Contact
-                    </a>
-                    <a href="/blog" className="link">
-                        Blog
-                    </a>
+                    <a href="/home" className="link">Home</a>
+                    <a href="/about" className="link">About</a>
+                    <a href="/services" className="link">Services</a>
+                    <a href="/contact" className="link">Contact</a>
+                    <a href="/blog" className="link">Blog</a>
                 </nav>
             </header>
         </div>

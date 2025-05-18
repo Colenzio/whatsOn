@@ -9,6 +9,13 @@
   padding-left: 0%;
 }
 
+/* Container for logo and title */
+.logo-title {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 0.5rem; /* Add spacing between logo and text */
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
